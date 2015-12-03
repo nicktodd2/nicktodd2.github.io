@@ -43,6 +43,7 @@ function loop() {
     }
 
     animationFrame = requestAnimationFrame(loop);
+    webview.allowsInlineMediaPlayback = YES;
 }
 
 $('button').on('click', function() {
