@@ -44,6 +44,9 @@ you would get civic800.bpg in the bin
 
 ###Main options:
 ```
+usage: bpgenc [options] infile.[jpg|png]
+
+
 -h                   show the full help (including the advanced options)
 -o outfile           set output filename (default = out.bpg)
 -q qp                set quantizer parameter (smaller gives better quality,
@@ -68,6 +71,62 @@ Animation options:
                      display delay per image in centiseconds.
 ```
 
+####Full options
+```
+The BPG command line encoder is 'bpgenc'. It takes JPEG or PNG images
+as input.
 
-Official information on the .bpg format and where to download the .js decoder
+- Speed: by default bpgenc uses the x265. You can compile the much
+  slower but more efficient JCTVC encoder and select it with the '-e
+  jctvc' option. With x265 you can select the encoding speed with the
+  '-m' option (1 = fast, but larger image, 9 = slower but smaller
+  image).
+
+- Bit depth: the default bit depth is 8. You can increase it to 10
+  ('-b 10' option) to slightly increase the compression ratio. For web
+  publishing it is generally not a good idea because the Javascript
+  decoder uses more memory. The compiled x265 encoder supports the bit
+  depth of 8, 10 and 12. The slower JCTVC encoder can be compiled to
+  support higher bit depths (up to 14) by enabling the Makefile
+  define: USE_JCTVC_HIGH_BIT_DEPTH.
+
+- Lossless compression is supported as a bonus thru the HEVC lossless
+  capabilities. Use a PNG input in this case unless you know what you
+  do ! In case of a JPEG input, the compression is lossless related to
+  the JPEG YCbCr data, not the RGB data. In any case, the bit depth
+  should match the one of your picture otherwise the file size
+  increases a lot. By default the lossless mode sets the bit depth to
+  8 bits. The prefered color space is set to "rgb". Notes:
+
+    - lossless mode is less tested that the lossy mode but it usually
+      gives better results that PNG on photographic images.
+
+    - the JCTVC encoder gives smaller images than the x265 encoder
+      with lossless compression.
+
+- There is a small difference of interpretation of the quantizer
+  parameter (-q option) between the x265 and JCTVC encoder.
+
+- Color space and chroma format:
+
+    * For JPEG input, the color space of the input image is not
+      modified (it is YCbCr, RGB, YCbCrK or CMYK). The chroma is
+      subsampled according to the preferred chroma format ('-f'
+      option).
+
+    * For PNG input, the input image is converted to the preferred
+      color space ('-c' option). Its chroma is then subsampled
+      according to the preferred chroma format.
+
+    * grayscale images are kept unmodified.
+
+- Premultiplied alpha: by default bpgenc uses non-premultiplied alpha
+  to preserve the color components. However, premultiplied alpha
+  ('-premul' option) usually gives a better compression at the expense
+  of a loss in the color components. This loss is not an issue if the
+  image is not edited.
+```
+
+
+#####Official information on the .bpg format and where to download the .js decoder
 http://bellard.org/bpg/
