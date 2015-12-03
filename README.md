@@ -5,16 +5,16 @@ Experiments with the .bpg image encoding and decoding workflow
 
 ##Homebrew Installation Instructions
 
-```brew install libbpg```
+brew install libbpg
 
 ###To encode a BPG
 navigate to your homebrew bpg installation folder
 
 Probably this -
-```/usr/local/Cellar/libbpg/0.9.6/bin```
+/usr/local/Cellar/libbpg/0.9.6/bin
 
 inside you will find:
-![bin](images/bin.png "bin")
+![bin](nicktodd2.github.io/images/bin.png "bin")
 
 have an image sequence ready to convert to an animated .bpg
 I have 240 frames of my civic image sequence in the folder here:
@@ -22,12 +22,12 @@ I have 240 frames of my civic image sequence in the folder here:
 
 in the terminal cd to your bin and use the following command to turn the frames into an animation:
 
-```/bpgenc -a civicR/civicR_%3d.png -fps 25 -loop 0 -o civic800```
+/bpgenc -a civicR/civicR_%3d.png -fps 25 -loop 0 -o civic800
 
 - Animations: with the '-a' option, animations can be encoded from a
   sequence of PNG or JPEG images, indexed from 1 or 0. For example:
 
-```./bpgenc -a anim%2d.png -fps 25 -loop 0 -o anim.bpg```
+./bpgenc -a anim%2d.png -fps 25 -loop 0 -o anim.bpg
 
   generates an animation from anim01.png, anim02.png, etc... The frame
   rate is specified with '-fps' and the number of loops with '-loop'
