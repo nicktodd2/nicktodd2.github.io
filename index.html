@@ -82,7 +82,7 @@ body {
           </li>
         </ul>
         <p>
-           640 wide -m 1 -b 8 settings (m = encoding options 1= fastest/biggest, 9=slowest/smallest) (b = bitdepth, 8, 10, or 12) (q = quantization; smaller gives better quality,
+           640 wide -m 1 -b 8 -q 51 settings (m = encoding options 1= fastest/biggest, 9=slowest/smallest) (b = bitdepth, 8, 10, or 12) (q = quantization; smaller gives better quality,
                      range: 0-51, default = 29)
         </p>
           <ul>
@@ -90,7 +90,17 @@ body {
               <a href="sigLowLow640/sig.html">640 px wide bpg asset with q=51</a>
             </li>
           </ul>
-
+          <p>
+             fastest encoding (-m 1) and fastest quantizzation (-q 51)Stress Tests
+          </p>
+            <ul>
+              <li>
+                <a href="sigLowLow640super/sig.html">( 640 px wide .bpg asset with q=51 ) * 6 = Stress</a>
+              </li>
+              <li>
+                <a href="sigLowLow640super/sig.html">( 640 px wide .bpg asset with q=51 ) * 12 = Super Stress</a>
+              </li>
+            </ul>
 
 
 
