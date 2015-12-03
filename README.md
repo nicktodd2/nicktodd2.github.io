@@ -130,3 +130,16 @@ as input.
 
 #####Official information on the .bpg format and where to download the .js decoder
 http://bellard.org/bpg/
+
+
+
+Really Promising Resources for Inline Video on iOS Safari
+=========================
+http://blog.webmatters.it/2012/09/canvas-rocks-video-sucks/
+https://github.com/sublimehq/anim_encoder
+
+Almost Turnkey Inline Video on iOS Safari
+=========================
+http://codepen.io/newshorts/pen/yNxNKR
+
+http://www.easy-bits.com/iphone-inline-video-autostart
