@@ -3,7 +3,12 @@ BPG Animations
 
 Experiments with the .bpg image encoding and decoding workflow
 
+
+
 ##Homebrew Installation Instructions
+
+for osx use libbpg in homebrew
+
 ```
 brew install libbpg
 ```
@@ -70,3 +75,7 @@ you would get civic800.bpg in the bin
                        infinite (default = 0)
   -delayfile file      text file containing one number per image giving the
                        display delay per image in centiseconds.
+
+
+Official information on the .bpg format and where to download the .js decoder
+http://bellard.org/bpg/
