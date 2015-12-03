@@ -33,25 +33,11 @@ in the terminal cd to your bin and use the following command to turn the frames 
 ```
 /bpgenc -a civicR/civicR_%3d.png -fps 25 -loop 0 -o civic800
 ```
+
 you would get civic800.bpg in the bin
+![bin with civic](images/bpg.png "bin")
 
-
-- Animations: with the '-a' option, animations can be encoded from a
-  sequence of PNG or JPEG images, indexed from 1 or 0. For example:
-
-  ```
-./bpgenc -a anim%2d.png -fps 25 -loop 0 -o anim.bpg
-  ```
-  generates an animation from anim01.png, anim02.png, etc... The frame
-  rate is specified with '-fps' and the number of loops with '-loop'
-  (0 = infinite). If a different delay per image is needed as in some
-  animated GIFs, a text file can be specified with the '-delayfile'
-  option. It contains one number per image giving its duration in
-  centiseconds. All durations are rounded to a multiple of '1/fps', so
-  it is important to set a consistent frame rate.
-
-
-  Main options:
+###Main options:
 
   -h                   show the full help (including the advanced options)
   -o outfile           set output filename (default = out.bpg)
