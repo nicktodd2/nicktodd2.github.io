@@ -20,7 +20,7 @@ var canvas = $('canvas')[0];
 var ctx = canvas.getContext('2d');
 var lastTime = Date.now();
 var animationFrame;
-var framesPerSecond = 25;
+var framesPerSecond = 30;
 function loop() {
     var time = Date.now();
     var elapsed = (time - lastTime) / 1000;
@@ -28,9 +28,9 @@ function loop() {
     // render
     if(elapsed >= ((1000/framesPerSecond)/1000)) {
         video.currentTime = video.currentTime + elapsed;
-        $(canvas).width(video.videoWidth);
-        $(canvas).height(video.videoHeight);
-        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+        $(canvas).width(675);
+        $(canvas).height(1336);
+        ctx.drawImage(video, 0, 0, 675, 1336);
         lastTime = time;
     }
 
