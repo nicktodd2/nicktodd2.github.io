@@ -32,6 +32,7 @@ function loop() {
         canvas.height = window.innerWidth*1.5;
         ctx.drawImage(video, 0, 0, window.innerWidth, window.innerWidth*1.5);
         lastTime = time;
+
     }
 
     // if we are at the end of the video stop
@@ -44,8 +45,6 @@ function loop() {
 
     animationFrame = requestAnimationFrame(loop);
 }
-
-
 window.onload = function() {
   video.load();
   loop();
