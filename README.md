@@ -137,6 +137,7 @@ Really Promising Resources for Inline Video on iOS Safari
 =========================
 http://blog.webmatters.it/2012/09/canvas-rocks-video-sucks/
 https://github.com/sublimehq/anim_encoder
+https://docs.google.com/document/pub?id=1GWTMLjqQsQS45FWwqNG9ztQTdGF48hQYpjQHR_d1WsI
 
 Almost Turnkey Inline Video on iOS Safari
 =========================
