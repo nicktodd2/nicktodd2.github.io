@@ -28,9 +28,9 @@ function loop() {
     // render
     if(elapsed >= ((1000/framesPerSecond)/1000)) {
         video.currentTime = video.currentTime + elapsed;
-        $(canvas).width(675);
-        $(canvas).height(1336);
-        ctx.drawImage(video, 0, 0, 675, 1336);
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerWidth*1.5;
+        ctx.drawImage(video, 0, 0, window.innerWidth, window.innerWidth*1.5);
         lastTime = time;
     }
 
@@ -44,6 +44,7 @@ function loop() {
 
     animationFrame = requestAnimationFrame(loop);
 }
+
 
 window.onload = function() {
   video.load();
