@@ -29,8 +29,8 @@ function loop() {
     if(elapsed >= ((1000/framesPerSecond)/1000)) {
         video.currentTime = video.currentTime + elapsed;
         canvas.width = window.innerWidth;
-        canvas.height = window.innerWidth*1.4;
-        ctx.drawImage(video, 0, 0, window.innerWidth, window.innerWidth*1.4);
+        canvas.height = window.innerWidth*1.4906666667;
+        ctx.drawImage(video, 0, 0, window.innerWidth, window.innerWidth*1.4906666667);
         lastTime = time;
 
     }
