@@ -144,3 +144,5 @@ Almost Turnkey Inline Video on iOS Safari
 http://codepen.io/newshorts/pen/yNxNKR
 
 http://www.easy-bits.com/iphone-inline-video-autostart
+
+http://nicktodd2.github.io/index2.html
