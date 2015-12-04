@@ -48,4 +48,4 @@ function loop() {
 setTimeout(function() {
   video.load();
   loop();
-},4000);
+},500);
