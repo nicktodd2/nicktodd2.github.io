@@ -28,8 +28,8 @@ function loop() {
     // render
     if(elapsed >= ((1000/framesPerSecond)/1000)) {
         video.currentTime = video.currentTime + elapsed;
-        $(canvas).width(video.videoWidth);
-        $(canvas).height(video.videoHeight);
+        $(canvas).width(window.innerWidth);
+        $(canvas).height(window.innerHeight);
         ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
         lastTime = time;
     }
