@@ -45,7 +45,7 @@ function loop() {
     animationFrame = requestAnimationFrame(loop);
 }
 
-setTimeout(function() {
+window.onload = function() {
   video.load();
   loop();
-},10);
+};
