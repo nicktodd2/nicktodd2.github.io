@@ -40,7 +40,7 @@ var Sequencer = (function(){
 		progressFgColor		: "#FFFFFF",
 		progressMode		: "none",		// can be: circle, bar, none
 		progressHeight		: "5px",		// if progressMode == "bar"
-		progressShowImages	: true,			// display images while loaded
+		progressShowImages	: false,			// display images while loaded
 	}
 
 	function init(customConfig){
