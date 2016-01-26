@@ -45,7 +45,8 @@ function loop() {
 
     animationFrame = requestAnimationFrame(loop);
 }
-window.onload = function() {
+
+$( 'document' ).ready(function() {
   video.load();
   loop();
-};
+});
