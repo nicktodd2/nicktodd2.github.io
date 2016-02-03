@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+  <style media="screen">
+  /* styles needed by the plugin */
+.animatedimage {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+}
+.animatedimage > * {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  border: 0;
+}
+/* the image that will show while waiting for javascript to load, and what users without javascript will see - if you don't want to use a class you might use *:first-child to select this instead */
+.animatedimage > .poster {
+  position: static;
+  visibility: visible;
+}
+/* spritesheets will rely on left/top positioning */
+.animatedimage[data-spritesize] > * {
+  position: relative;
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="animatedimage">
+    <img src="pics/DSC04775.jpg"/>
+    <img src="pics/DSC04776.jpg"/>
+    <img src="pics/DSC04777.jpg"/>
+    <img src="pics/DSC04778.jpg"/>
+    <img src="pics/DSC04779.jpg"/>
+    <img src="pics/DSC04780.jpg"/>
+    <img src="pics/DSC04781.jpg"/>
+    <img src="pics/DSC04782.jpg"/>
+    <img src="pics/DSC04783.jpg"/>
+    <img src="pics/DSC04784.jpg"/>
+    <img src="pics/DSC04785.jpg"/>
+    <img src="pics/DSC04786.jpg"/>
+    <img src="pics/DSC04787.jpg"/>
+    <img src="pics/DSC04788.jpg"/>
+    <img src="pics/DSC04789.jpg"/>
+    <img src="pics/DSC04790.jpg"/>
+    <img src="pics/DSC04791.jpg"/>
+    <img src="pics/DSC04792.jpg"/>
+    <img src="pics/DSC04793.jpg"/>
+    <img src="pics/DSC04794.jpg"/>
+    <img src="pics/DSC04795.jpg"/>
+    <img src="pics/DSC04796.jpg"/>
+    <img src="pics/DSC04797.jpg"/>
+    <img src="pics/DSC04798.jpg"/>
+    <img src="pics/DSC04799.jpg"/>
+    <img src="pics/DSC04800.jpg"/>
+    <img src="pics/DSC04801.jpg"/>
+    <img src="pics/DSC04802.jpg"/>
+    <img src="pics/DSC04803.jpg"/>
+    <img src="pics/DSC04804.jpg"/>
+    <img src="pics/DSC04805.jpg"/>
+    <img src="pics/DSC04806.jpg"/>
+    <img src="pics/DSC04807.jpg"/>
+    <img src="pics/DSC04808.jpg"/>
+    <img src="pics/DSC04809.jpg"/>
+    <img src="pics/DSC04810.jpg"/>
+    <img src="pics/DSC04811.jpg"/>
+    <img src="pics/DSC04812.jpg"/>
+    <img src="pics/DSC04813.jpg"/>
+    <img src="pics/DSC04814.jpg"/>
+    <img src="pics/DSC04815.jpg"/>
+    <img src="pics/DSC04816.jpg"/>
+    <img src="pics/DSC04817.jpg"/>
+    <img src="pics/DSC04818.jpg"/>
+    <img src="pics/DSC04819.jpg"/>
+    <img src="pics/DSC04820.jpg"/>
+    <img src="pics/DSC04821.jpg"/>
+    <img src="pics/DSC04822.jpg"/>
+    <img src="pics/DSC04823.jpg"/>
+    <img src="pics/DSC04824.jpg"/>
+    <img src="pics/DSC04825.jpg"/>
+    <img src="pics/DSC04826.jpg"/>
+    <img src="pics/DSC04827.jpg"/>
+    <img src="pics/DSC04828.jpg"/>
+    <img src="pics/DSC04829.jpg"/>
+    <img src="pics/DSC04830.jpg"/>
+    <img src="pics/DSC04831.jpg"/>
+    <img src="pics/DSC04832.jpg"/>
+    <img src="pics/DSC04833.jpg"/>
+    <img src="pics/DSC04834.jpg"/>
+    <img src="pics/DSC04835.jpg"/>
+    <img src="pics/DSC04836.jpg"/>
+    <img src="pics/DSC04837.jpg"/>
+    <img src="pics/DSC04838.jpg"/>
+    <img src="pics/DSC04839.jpg"/>
+    <img src="pics/DSC04840.jpg"/>
+    <img src="pics/DSC04841.jpg"/>
+    <img src="pics/DSC04842.jpg"/>
+    <img src="pics/DSC04843.jpg"/>
+    <img src="pics/DSC04844.jpg"/>
+    <img src="pics/DSC04845.jpg"/>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script src="js.js"></script>
+</body>
