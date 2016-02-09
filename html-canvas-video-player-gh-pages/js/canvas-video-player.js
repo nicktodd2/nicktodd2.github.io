@@ -258,5 +258,4 @@ CanvasVideoPlayer.prototype.drawFrame = function() {
 
 $( 'document' ).ready(function() {
   canvasVideo.play();
-  loop();
 });
