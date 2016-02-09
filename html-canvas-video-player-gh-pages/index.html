@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+
+	<title>HTML canvas video player</title>
+
+	<link rel="stylesheet" href="https://stanko.github.io/skyblue/css/skyblue.css">
+	<link rel="stylesheet" href="demo/demo.css">
+</head>
+
+<body>
+	<div class="video-wrapper js-video-wrapper">
+		<div class="video-responsive">
+			<video class="video js-video" muted autoplay="true">
+				<source src="medium.mp4" type="video/mp4">
+			</video>
+
+			<canvas class="canvas js-canvas"></canvas>
+
+			<div class=" js-timeline">
+				<div class="video-timeline-passed js-timeline-passed">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="demo/fastclick.js"></script>
+	<script src="demo/demo.js"></script>
+
+	<script src="js/canvas-video-player.js"></script>
+
+
+	<script>
+		var canvasVideo = new CanvasVideoPlayer({
+			videoSelector: '.js-video',
+			canvasSelector: '.js-canvas',
+			timelineSelector: '.js-timeline',
+			audio: true,
+		});
+	</script>
+</body>
+</html>
