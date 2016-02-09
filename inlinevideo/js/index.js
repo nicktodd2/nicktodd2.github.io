@@ -47,6 +47,6 @@ function loop() {
 }
 
 $( 'document' ).ready(function() {
-  video.load();
+  canvasVideo.play();
   loop();
 });
