@@ -16,8 +16,8 @@ body {
 }
 
 .frames > .frame.animated {
-	-webkit-animation: fadea .135s .135s infinite;
-	animation: fadea .135s .135s infinite;
+	-webkit-animation: fadea .05s .05s infinite;
+	animation: fadea .05s .05s infinite;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
