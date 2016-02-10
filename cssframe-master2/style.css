@@ -16,8 +16,8 @@ body {
 }
 
 .frames > .frame.animated {
-	-webkit-animation: fadea .1s .1s infinite;
-	animation: fadea .1s .1s infinite;
+	-webkit-animation: fadea .01s .01s infinite;
+	animation: fadea .01s .01s infinite;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
@@ -40,11 +40,11 @@ body {
 	10% {
 	  opacity: .1;
 	}
-	
+
 	20% {
 	  opacity: .2;
 	}
-	
+
 	30% {
 	  opacity: .3;
 	}
@@ -52,7 +52,7 @@ body {
 	40% {
 	  opacity: .4;
 	}
-	
+
 	50% {
 	  opacity: .5;
 	}
@@ -60,7 +60,7 @@ body {
 	60% {
 	  opacity: .6;
 	}
-	
+
 	70% {
 	  opacity: .7;
 	}
