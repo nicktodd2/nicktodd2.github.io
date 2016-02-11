@@ -1,13 +1,13 @@
 (function() {
 	var frameNumber = 1;
-	var totalFrames = 119;
+	var totalFrames = 48;
 	var frameExt = '.jpg';
 	var frame = document.querySelector('.frame');
 	var image = frameNumber + frameExt;
 	frame.style.backgroundImage = 'url(img/' + image + ')';
 
 	function animate() {
-		if (frameNumber == 119) {
+		if (frameNumber == 48) {
 			frameNumber = 0;
 		}
 		frameNumber += 1
