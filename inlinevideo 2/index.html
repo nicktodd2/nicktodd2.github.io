@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>InlineVideo</title>
+
+
+
+
+
+
+
+<style media="screen">
+html, body {
+width:  100%;
+height: 100%;
+margin: 0px;
+background:url(poster1.png);
+background-size: cover;
+}
+</style>
+  </head>
+
+  <body>
+
+    <!--
+
+Date: 2015-18-07
+Inline Video Player v0.0.1
+Copyright 2015 Mike Newell
+Released under the MIT license
+https://tldrlegal.com/license/mit-license
+http://iwearshorts.com/
+https://github.com/newshorts/InlineVideo
+
+because apple wont allow us web developers to choose if we want a video to play inline on the iphone
+
+hit play a couple times, its kinda jenky
+
+-->
+
+<video style="display: none;" playsinline webkit-playsinline autoplay="true">
+  <source src="1A_6819_Honda_RPA_Kilo-Coupe_Signature_101_Pan_v03.mp4">
+</video>
+<canvas></canvas>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/requestAnimationFrame.js"></script>
+        <script src="js/index.js"></script>
+
+
+  </body>
+</html>
